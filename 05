@@ -1,0 +1,24 @@
+
+#include <locale.h>
+
+int main(){
+	setlocale(LC_ALL,"");
+	
+	float n1,n2,n3,media;
+	
+	printf("Escreva o primeiro número:");
+	scanf("%f",&n1);
+	
+	printf("Escreva o segundo número:");
+	scanf("%f",&n2);
+	
+	printf("Escreva o teceiro número:");
+	scanf("%f",&n3);
+	
+	//fazer a media aritimética
+	media = (n1 + n2 + n3) /3;
+	
+	printf("A media aritimética e: %.2f", media);
+	
+	return 0;
+}
