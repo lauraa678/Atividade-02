@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+int main(){
+	setlocale(LC_ALL,"");
+	
+	int numero,i;
+	
+	printf("Digite o número para aparecer a tabuada: ");
+	scanf("%d",&numero);
+	
+	//Fornece a tabuada do número fornecido.
+	printf("Tabuada do %d: \n",numero);
+	for(i = 1; i <=10; i++){
+		
+		printf("%d x %d = %d\n", numero, i ,numero * i);
+	}
+	
+	return 0;
+}
