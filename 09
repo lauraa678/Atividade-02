@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+int main(){
+	setlocale(LC_ALL,"");
+   
+   	int numero, i;
+   
+   	unsigned long long fatorial = 1;
+   
+   	printf("Digite um número inteiro positivo: ");
+   	scanf("%d",&numero);
+ 	
+	if(numero <0){
+		printf("NÚMERO INVALIDO");
+	}else{
+		//Calcula fatorial
+		for(i = 1; i <= numero; i++){
+			fatorial *= i;
+		}
+		
+		printf("O fatorial de %d é: %.llu\n", numero, fatorial);
+	}	
+
+return 0;
+}
